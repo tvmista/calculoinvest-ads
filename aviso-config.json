@@ -1,5 +1,5 @@
 {
-  "ativo": true,
+  "ativo": false,
   "id": "aviso-001",
   "titulo": "Aviso",
   "mensagem": "teste do app."
