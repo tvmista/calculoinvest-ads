@@ -1,6 +1,6 @@
 {
-  "ativo": false,
+  "ativo": true,
   "id": "aviso-001",
-  "titulo": "Aviso",
+  "titulo": "Obrigado por testar o Aplicativo CálculoInvest",
   "mensagem": "teste do app."
 }
