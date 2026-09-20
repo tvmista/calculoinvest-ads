@@ -1,250 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade — Cálculo Invest</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.7;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Cálculo Invest</title>
+<meta name="description" content="Política de Privacidade do aplicativo Cálculo Invest: como as informações são tratadas ao usar as calculadoras financeiras.">
+<style>
+  :root{
+    --bg:#F6F3EC;
+    --paper:#FFFEFB;
+    --ink:#16241D;
+    --ink-soft:#45524A;
+    --primary:#0F3D2E;
+    --accent:#B8901F;
+    --accent-soft:#EFE2C0;
+    --line:#DCD6C4;
+    --link:#1B5E42;
+    --mark-bg:#FFE58A;
+    --mark-ink:#3B2F00;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0E1512;
+      --paper:#151F1A;
+      --ink:#ECEAE2;
+      --ink-soft:#B5BDB4;
+      --primary:#8FD0AE;
+      --accent:#D8B04A;
+      --accent-soft:#2A2A1B;
+      --line:#2B3A32;
+      --link:#8FD0AE;
+      --mark-bg:#5B4A0A;
+      --mark-ink:#FFF3C4;
     }
-    header {
-      text-align: center;
-      padding: 56px 24px 32px;
-    }
-    header h1 {
-      font-size: 1.9rem;
-      color: #38bdf8;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 0.95rem;
-      color: #94a3b8;
-    }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 0 24px 64px;
-    }
-    .card {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 28px 32px;
-      margin-bottom: 20px;
-    }
-    .card h2 {
-      color: #38bdf8;
-      font-size: 1.15rem;
-      margin-bottom: 12px;
-    }
-    .card p, .card ul {
-      color: #cbd5e1;
-      font-size: 0.96rem;
-      margin-bottom: 12px;
-    }
-    .card p:last-child, .card ul:last-child {
-      margin-bottom: 0;
-    }
-    .card ul {
-      padding-left: 22px;
-    }
-    .card li {
-      margin-bottom: 6px;
-    }
-    a {
-      color: #38bdf8;
-    }
-    .highlight {
-      background: #1e293b;
-      border-left: 3px solid #38bdf8;
-      border-radius: 8px;
-      padding: 20px 24px;
-      margin-bottom: 20px;
-    }
-    .highlight h2 {
-      color: #38bdf8;
-      font-size: 1.15rem;
-      margin-bottom: 12px;
-    }
-    .highlight p {
-      color: #cbd5e1;
-      font-size: 0.96rem;
-      margin-bottom: 12px;
-    }
-    .highlight p:last-child {
-      margin-bottom: 0;
-    }
-    footer {
-      text-align: center;
-      padding: 24px;
-      color: #64748b;
-      font-size: 0.85rem;
-    }
-    footer a {
-      color: #94a3b8;
-    }
-  </style>
+  }
+
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:1.0625rem;
+    line-height:1.65;
+  }
+
+  .wrap{
+    max-width:44rem;
+    margin:0 auto;
+    padding:2rem 1.25rem 3rem;
+  }
+
+  header{
+    border-bottom:3px solid var(--accent);
+    padding-bottom:1.25rem;
+    margin-bottom:1.75rem;
+  }
+  .marca{
+    margin:0 0 .5rem;
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:1.05rem;
+    font-weight:700;
+    color:var(--primary);
+  }
+  h1{
+    margin:0 0 .5rem;
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:clamp(1.9rem,6vw,2.6rem);
+    line-height:1.15;
+    color:var(--primary);
+  }
+  .atualizacao{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:.95rem;
+  }
+
+  h2{
+    margin:2.25rem 0 .5rem;
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:1.35rem;
+    line-height:1.3;
+    color:var(--primary);
+  }
+  p{ margin:.6rem 0; max-width:68ch; }
+  ul{ margin:.6rem 0; padding-left:1.25rem; max-width:68ch; }
+  li{ margin:.35rem 0; }
+  strong{ color:var(--ink); }
+
+  a{ color:var(--link); text-underline-offset:.15em; }
+  a:focus-visible{
+    outline:3px solid var(--accent);
+    outline-offset:2px;
+    border-radius:2px;
+  }
+
+  .resumo{
+    background:var(--accent-soft);
+    border-left:4px solid var(--accent);
+    border-radius:0 6px 6px 0;
+    padding:1rem 1.25rem;
+    margin:0 0 .5rem;
+  }
+  .resumo h2{
+    margin:0 0 .35rem;
+    font-size:1.1rem;
+  }
+  .resumo ul{ margin:.35rem 0 0; }
+
+  mark{
+    background:var(--mark-bg);
+    color:var(--mark-ink);
+    padding:0 .25em;
+    border-radius:3px;
+  }
+
+  .aviso-legal{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:.25rem 1.25rem 1rem;
+    margin-top:2.25rem;
+  }
+  .aviso-legal h2{ margin-top:1rem; }
+
+  footer{
+    margin-top:2.5rem;
+    padding-top:1rem;
+    border-top:1px solid var(--line);
+    color:var(--ink-soft);
+    font-size:.9rem;
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
 
   <header>
+    <p class="marca">Cálculo Invest</p>
     <h1>Política de Privacidade</h1>
-    <p>Cálculo Invest · Última atualização: 15 de setembro de 2026</p>
+    <p class="atualizacao">Última atualização: <time datetime="2026-09-20">20 de setembro de 2026</time></p>
   </header>
 
   <main>
+    <p>O aplicativo <strong>Cálculo Invest</strong> oferece calculadoras e simuladores financeiros gratuitos. Esta Política de Privacidade explica como as informações são tratadas quando você usa o aplicativo.</p>
 
-    <div class="card">
-      <p>
-        O aplicativo <strong>Cálculo Invest</strong> oferece calculadoras e simuladores financeiros
-        gratuitos. Esta Política de Privacidade explica como tratamos as informações ao utilizar o
-        aplicativo.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Controlador dos dados</h2>
-      <p>
-        Este aplicativo é desenvolvido e mantido por Cálculo Invest, responsável pelo
-        tratamento dos dados descritos nesta política.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>1. Não coletamos dados pessoais</h2>
-      <p>
-        O Cálculo Invest não exige cadastro, login ou qualquer informação pessoal para ser utilizado.
-        Não coletamos nome, e-mail, telefone, localização ou qualquer outro dado que possa identificar
-        você.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>2. Dados armazenados apenas no seu dispositivo</h2>
-      <p>
-        Para melhorar sua experiência, o aplicativo salva localmente no seu próprio aparelho (usando o
-        armazenamento local do dispositivo):
-      </p>
+    <section class="resumo" aria-labelledby="resumo-titulo">
+      <h2 id="resumo-titulo">Em resumo</h2>
       <ul>
-        <li>A ordem em que você organizou os cartões das calculadoras na tela inicial;</li>
-        <li>Uma cópia (cache) das últimas taxas de Selic e CDI consultadas, para exibição rápida mesmo sem conexão à internet.</li>
+        <li>O app não pede cadastro, login nem dados pessoais.</li>
+        <li>O que você organiza no app fica só no seu aparelho.</li>
+        <li>Os anúncios são do Google AdMob, que pode usar o identificador de publicidade do seu aparelho.</li>
+        <li>Ao se conectar a serviços externos, como o Banco Central e o Google, esses servidores podem registrar o endereço IP do seu aparelho.</li>
       </ul>
-      <p>
-        Esses dados permanecem apenas no seu dispositivo, não são enviados a nós nem a terceiros, e
-        podem ser apagados a qualquer momento limpando os dados do aplicativo nas configurações do seu
-        celular ou desinstalando o app.
-      </p>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>3. Consulta a fontes públicas de dados</h2>
-      <p>
-        Para exibir as taxas de Selic e CDI atualizadas, o aplicativo consulta a API pública do Banco
-        Central do Brasil (api.bcb.gov.br). Essa consulta busca apenas dados econômicos públicos e não
-        envia nenhuma informação pessoal sua.
-      </p>
-    </div>
+    <h2 id="controlador">Controlador dos dados</h2>
+    <p>Este aplicativo é desenvolvido e mantido por <strong>Cálculo Invest</strong>, responsável pelo tratamento dos dados descritos nesta política.</p>
 
-    <div class="card">
-      <h2>4. Publicidade</h2>
-      <p>
-        O aplicativo <strong>Cálculo Invest</strong> pode exibir anúncios em banner fornecidos pelo
-        Google AdMob. A publicidade contribui para a manutenção e disponibilização gratuita do
-        aplicativo.
-      </p>
-      <p>
-        O AdMob, serviço de publicidade do Google, pode utilizar informações do dispositivo e um
-        identificador de publicidade para exibir anúncios personalizados ou não personalizados, de
-        acordo com as configurações do usuário e as políticas aplicáveis do Google.
-      </p>
-      <p>
-        Você pode gerenciar ou desativar a personalização de anúncios nas
-        <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Configurações de Anúncios do Google</a>.
-      </p>
-      <p>
-        Para saber mais sobre como o Google utiliza os dados coletados por seus parceiros, consulte a
-        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Política de Parceiros do Google</a>.
-      </p>
-    </div>
+    <h2 id="s1">1. Dados que coletamos</h2>
+    <p>Nós, desenvolvedores, não coletamos dados pessoais. O Cálculo Invest não exige cadastro, login ou qualquer informação pessoal para ser utilizado, e não coletamos nome, e-mail, telefone ou localização.</p>
+    <p>Porém, o Google AdMob, que exibe os anúncios do aplicativo, pode coletar automaticamente o identificador de publicidade, o endereço IP e informações do dispositivo, conforme descrito na seção 4.</p>
 
-    <div class="card">
-      <h2>5. Compartilhamento de dados</h2>
-      <p>
-        Como não coletamos dados pessoais diretamente, não compartilhamos, vendemos ou alugamos
-        informações pessoais de usuários. Entretanto, serviços de terceiros utilizados pelo aplicativo,
-        como o Google AdMob, podem tratar dados conforme suas próprias políticas de privacidade e
-        termos aplicáveis.
-      </p>
-    </div>
+    <h2 id="s2">2. Dados armazenados apenas no seu dispositivo</h2>
+    <p>Para melhorar sua experiência, o aplicativo salva localmente no seu próprio aparelho (usando o armazenamento local do dispositivo):</p>
+    <ul>
+      <li>a ordem em que você organizou os cartões das calculadoras na tela inicial;</li>
+      <li>uma cópia (cache) das últimas taxas de Selic e CDI consultadas, para exibição rápida mesmo sem conexão à internet;</li>
+      <li>os avisos que o aplicativo já mostrou a você e quais deles já foram exibidos.</li>
+    </ul>
+    <p>Esses dados permanecem apenas no seu dispositivo, não são enviados a nós e podem ser apagados a qualquer momento limpando os dados do aplicativo nas configurações do celular ou desinstalando o app.</p>
 
-    <div class="card">
-      <h2>6. Seus direitos como titular de dados</h2>
-      <p>
-        Ainda que o aplicativo não colete dados pessoais identificáveis, você tem direito, nos termos
-        da Lei Geral de Proteção de Dados (Lei 13.709/2018), a solicitar informações sobre eventual
-        tratamento de dados, confirmação de existência de tratamento, e demais direitos previstos no
-        Art. 18 da LGPD, entrando em contato pelo e-mail informado nesta política.
-      </p>
-    </div>
+    <h2 id="s3">3. Conexões com serviços externos</h2>
+    <p>Para funcionar, o aplicativo se conecta a serviços externos. Nessas conexões, como em qualquer acesso à internet, o servidor que responde pode registrar o endereço IP do seu aparelho e dados técnicos da conexão. O aplicativo não envia dados pessoais nessas consultas. Os serviços usados são:</p>
+    <ul>
+      <li><strong>Banco Central do Brasil</strong> (api.bcb.gov.br): fornece as taxas de Selic e CDI, que são dados públicos.</li>
+      <li><strong>Nosso site</strong> (app.calculoinvest.com.br).</li>
+      <li><strong>Google Fonts</strong> (fonts.googleapis.com): fornece as fontes usadas na aparência do aplicativo.</li>
+      <li><strong>jsDelivr</strong> (cdn.jsdelivr.net): fornece a biblioteca de gráficos usada em algumas calculadoras.</li>
+      <li><strong>Google AdMob</strong>: fornece os anúncios, conforme a seção 4.</li>
+    </ul>
 
-    <div class="card">
-      <h2>7. Crianças e adolescentes</h2>
-      <p>
-        O aplicativo não é direcionado especificamente a crianças e não coleta intencionalmente dados
-        de menores de idade.
-      </p>
-    </div>
+    <h2 id="s4">4. Publicidade</h2>
+    <p>O aplicativo exibe anúncios em banner e anúncios de tela cheia (intersticiais) fornecidos pelo Google AdMob. A publicidade contribui para a manutenção e a disponibilização gratuita do aplicativo.</p>
+    <p>O AdMob, serviço de publicidade do Google, pode utilizar informações do dispositivo e um identificador de publicidade para exibir anúncios personalizados ou não personalizados, de acordo com as configurações do usuário e as políticas aplicáveis do Google.</p>
+    <p>Você pode controlar esse uso:</p>
+    <ul>
+      <li>gerenciando ou desativando a personalização de anúncios nas <a href="https://adssettings.google.com" rel="noopener">Configurações de Anúncios do Google</a>;</li>
+      <li>redefinindo ou excluindo o identificador de publicidade nas configurações de anúncios do Android (o caminho varia conforme o aparelho).</li>
+    </ul>
+    <p>Para saber mais sobre como o Google utiliza os dados coletados por seus parceiros, consulte a <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Política de Parceiros do Google</a>.</p>
 
-    <div class="highlight">
-      <h2>8. Isenção de responsabilidade sobre os cálculos</h2>
-      <p>
-        As calculadoras e simuladores do Cálculo Invest têm caráter exclusivamente informativo e
-        educacional, servindo como ferramenta de apoio à tomada de decisão financeira. Os resultados
-        apresentados são estimativas baseadas nos dados e parâmetros inseridos pelo próprio usuário e
-        nas taxas públicas consultadas, podendo não refletir com exatidão cenários reais de mercado,
-        condições contratuais específicas de instituições financeiras, ou variações econômicas futuras.
-      </p>
-      <p>
-        Recomendamos sempre confirmar os valores calculados junto a profissionais qualificados ou às
-        instituições financeiras envolvidas antes de tomar decisões de investimento. O uso das
-        informações fornecidas pelo aplicativo é de responsabilidade exclusiva do usuário, e o Cálculo
-        Invest não se responsabiliza por eventuais perdas, danos ou prejuízos decorrentes de decisões
-        tomadas com base nos resultados exibidos.
-      </p>
-    </div>
+    <h2 id="s5">5. Compartilhamento de dados</h2>
+    <p>Não vendemos nem alugamos informações pessoais de usuários. Os serviços de terceiros usados pelo aplicativo, como o Google AdMob, o Banco Central, o Google Fonts, o jsDelivr e o GitHub Pages, podem tratar dados conforme suas próprias políticas de privacidade e termos aplicáveis.</p>
 
-    <div class="card">
-      <h2>9. Lei aplicável</h2>
-      <p>Esta Política de Privacidade é regida pelas leis da República Federativa do Brasil.</p>
-    </div>
+    <h2 id="s6">6. Seus direitos como titular de dados</h2>
+    <p>A Lei Geral de Proteção de Dados (Lei 13.709/2018) garante ao titular de dados pessoais direitos como a confirmação de que há tratamento, o acesso, a correção e a eliminação dos dados, entre outros previstos no Art. 18. Como o aplicativo não coleta dados pessoais diretamente, esses direitos dizem respeito principalmente às informações tratadas pelos serviços de terceiros descritos nesta política, como o Google AdMob, que você pode gerenciar nas <a href="https://adssettings.google.com" rel="noopener">Configurações de Anúncios do Google</a> e nas configurações do seu aparelho.</p>
 
-    <div class="card">
-      <h2>10. Alterações nesta política</h2>
-      <p>
-        Esta Política de Privacidade pode ser atualizada periodicamente. Recomendamos revisar esta
-        página de tempos em tempos. A data da última atualização estará sempre indicada no topo deste
-        documento.
-      </p>
-    </div>
+    <h2 id="s7">7. Crianças e adolescentes</h2>
+    <p>O aplicativo não é direcionado especificamente a crianças e não coleta intencionalmente dados de menores de idade.</p>
 
-    <div class="card">
-      <h2>11. Contato</h2>
-      <p>
-        Dúvidas sobre esta Política de Privacidade podem ser enviadas para:
-        <a href="mailto:contato@calculoinvest.com.br">contato@calculoinvest.com.br</a>
-      </p>
-    </div>
+    <section class="aviso-legal" aria-labelledby="s8">
+      <h2 id="s8">8. Isenção de responsabilidade sobre os cálculos</h2>
+      <p>As calculadoras e simuladores do Cálculo Invest têm caráter exclusivamente informativo e educacional, servindo como ferramenta de apoio à tomada de decisão financeira. Os resultados apresentados são estimativas baseadas nos dados e parâmetros inseridos pelo próprio usuário e nas taxas públicas consultadas, podendo não refletir com exatidão cenários reais de mercado, condições contratuais específicas de instituições financeiras ou variações econômicas futuras.</p>
+      <p>Recomendamos sempre confirmar os valores calculados junto a profissionais qualificados ou às instituições financeiras envolvidas antes de tomar decisões de investimento. O uso das informações fornecidas pelo aplicativo é de responsabilidade exclusiva do usuário, e o Cálculo Invest não se responsabiliza por eventuais perdas, danos ou prejuízos decorrentes de decisões tomadas com base nos resultados exibidos.</p>
+    </section>
 
+    <h2 id="s9">9. Lei aplicável</h2>
+    <p>Esta Política de Privacidade é regida pelas leis da República Federativa do Brasil.</p>
+
+    <h2 id="s10">10. Alterações nesta política</h2>
+    <p>Esta Política de Privacidade pode ser atualizada periodicamente. Recomendamos revisar esta página de tempos em tempos. A data da última atualização estará sempre indicada no topo deste documento.</p>
+
+    <h2 id="s11">11. Contato</h2>
+    <p>Dúvidas sobre esta Política de Privacidade podem ser enviadas para <a href="mailto:contato@calculoinvest.com.br">contato@calculoinvest.com.br</a>.</p>
   </main>
 
   <footer>
-    &copy; 2026 Cálculo Invest. Todos os direitos reservados.
+    <p>© 2026 Cálculo Invest. Todos os direitos reservados.</p>
   </footer>
 
+</div>
 </body>
 </html>
+
