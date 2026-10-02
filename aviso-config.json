@@ -1,6 +1,6 @@
 {
   "ativo": true,
-  "id": "aviso-001",
-  "titulo": "Olá",
-  "mensagem": "Obrigado por testar o Aplicativo CálculoInvest."
+  "id": "aviso-002",
+  "titulo": "Fim da fase de testes!",
+  "mensagem": "Obrigado por testar o Aplicativo CálculoInvest. Em breve, ele estará disponível para o público geral na Google Play Store"
 }
