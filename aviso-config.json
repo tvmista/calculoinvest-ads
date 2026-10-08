@@ -1,6 +1,6 @@
 {
   "ativo": true,
-  "id": "aviso-003",
-  "titulo": "Teste",
-  "mensagem": "<b>teste</b>"
+  "id": "aviso-004",
+  "titulo": "Olá!",
+  "mensagem": "Há uma nova atualização com algumas melhorias internas"
 }
