@@ -1,6 +1,6 @@
 {
-  "ativo": true,
+  "ativo": false,
   "id": "aviso-004",
   "titulo": "Olá!",
-  "mensagem": "Há uma nova atualização com algumas melhorias internas"
+  "mensagem": "Aproveite todas as calculadoras do nosso App"
 }
