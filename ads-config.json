@@ -1,5 +1,9 @@
 {
   "modoTeste": false,
   "bannerId": "ca-app-pub-2603466663722625/2838172433",
-  "intersticialId": "ca-app-pub-2603466663722625/6320542866"
+  "intersticialId": "ca-app-pub-2603466663722625/6320542866",
+  "premiadoId": "ca-app-pub-2603466663722625/7117030468",
+  "intervaloIntersticialMinutos": 5,
+  "transicoesAntesDoPrimeiroIntersticial": 5,
+  "horasSemAnunciosPremiado": 24
 }
