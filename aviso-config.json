@@ -1,6 +1,6 @@
 {
-  "ativo": false,
-  "id": "aviso-004",
-  "titulo": "Olá!",
-  "mensagem": "Aproveite todas as calculadoras do nosso App"
+  "ativo": true,
+  "id": "aviso-005",
+  "titulo": "Nova versão disponível!",
+  "mensagem": "Acesse a Play Store e confira se você já está usando a versão mais recente do CálculoInvest."
 }
